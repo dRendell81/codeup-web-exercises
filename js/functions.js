@@ -73,7 +73,7 @@
  * > calculateTip(0.25, 25.50) // returns 6.375
  * > calculateTip(0.15, 33.42) // returns 5.013
  */
-//function calculateTip
+
 /**
  * TODO:
  * Use prompt and alert in combination with your calculateTip function to
@@ -99,10 +99,10 @@
  *
  * > applyDiscount(45.99, 0.12) // 40.4712
  */
-function applyDiscount(price, discount){
-    var dollarsOffThePrice = price * discount;
-    return price - dollarsOffThePrice;
-}
-console.log(applyDiscount(100, .10));
-console.log(applyDiscount(200, .10));
-console.log(applyDiscount(300, .10));
+// function applyDiscount(price, discount){
+//     var dollarsOffThePrice = price * discount;
+//     return price - dollarsOffThePrice;
+// }
+// console.log(applyDiscount(100, .10));
+// console.log(applyDiscount(200, .10));
+// console.log(applyDiscount(300, .10));
