@@ -29,12 +29,25 @@
 //     console.log(i.toString().repeat(i));
 // }
 
-for (var number = 1; number < 10; number++) {
-    var count = 0;
-    var outputString = "";
-    while (count <number){
-        outputString = outputString + number.toString();
-        count = count + 1;
-    }
-    console.log(outputString);
-}
+// for (var number = 1; number < 10; number++) {
+//     var count = 0;
+//     var outputString = "";
+//     while (count <number){
+//         outputString = outputString + number.toString();
+//         count = count + 1;
+//     }
+//     console.log(outputString);
+// }
+
+// var string = "";
+// for (var i = 0; i <8; i++) {
+//     var word = prompt("Let's make a sentence!");
+//     if (word === "curses"){
+//         console.log("This is a respectable program!";)
+//         break;
+//     }
+//
+//     string = string + " " + word;
+//     console.log(string);
+// }
+
