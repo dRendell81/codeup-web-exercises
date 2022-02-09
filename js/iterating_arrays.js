@@ -56,4 +56,19 @@ names.forEach(function(name){
      *  > last([1, 2, 3, 4, 5]) // return 5
      */
 
-// })();
+    function first(names){
+        console.log(names[0]);
+    }
+    first(names);
+
+    function second(names){
+        console.log(names[1]);
+    }
+    second(names);
+
+    function third(names){
+        console.log(names[3]);
+    }
+    third(names);
+
+// // })();
