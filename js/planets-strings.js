@@ -4,13 +4,8 @@
 (function(){
     "use strict";
 
-    var planetsArray = ["Mercury","Venus","Earth","Mars","Jupiter","Saturn","Uranus","Neptune"];
-    console.log(planetsArray);
 
 
-    // var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
-    // var planetsArray;
-    //var planetsArray = planetsString.split("|");
 
     /**
      * TODO:
@@ -18,21 +13,24 @@
      * planetsArray.
      * console.log planetsArray to check your work
      */
-    // var planetsArray = ["Mercury","Venus","Earth","Mars","Jupiter","Saturn","Uranus","Neptune"];
-    // console.log(planetsArray);
-    // console.log(planetsArray);
 
-
-    // console.log(backToString);
-
-    var planetsArray = ("br<Mercury>","br<Venus>","br<Earth>","br<Mars>","br<Jupiter>","br<Saturn>","br<Uranus>","br<Neptune>");
+    var planetsString = "Mercury|Venus|Earth|Mars|Jupiter|Saturn|Uranus|Neptune";
+    var planetsArray = planetsString.split("|");
     console.log(planetsArray);
 
+
+
+    // var planetsArray = ("br<Mercury>","br<Venus>","br<Earth>","br<Mars>","br<Jupiter>","br<Saturn>","br<Uranus>","br<Neptune>");
+    // console.log(planetsArray);
+
+    console.log(planetsArray.join("<br>"));
 
     /**
      * TODO:
      * Create a string with <br> tags between each planet. console.log() your
      * results. Why might this be useful?
+
+
 
 
      *
