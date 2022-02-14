@@ -260,6 +260,7 @@
      * > console.log(person.sayHello()) // "Hello from Rick Sanchez!"
      */
 
+
     person = {
         firstName: "Deon",
         lastName: "Rendell",
@@ -357,6 +358,45 @@
      *      ...
      */
 
+    var books = [
+        {
+            title: '1984',
+            author: {
+                firstName: 'George',
+                lastName: 'Orwell'
+            }
+        },
+        {
+            title: 'Book 2',
+            author: {
+                firstName: 'FirstName2',
+                lastName: 'LastName2'
+            }
+        },
+        {
+            title: 'Book 3',
+            author: {
+                firstName: 'FirstName3',
+                lastName: 'LastName3'
+            }
+        },
+        {
+            title: 'Book 4',
+            author: {
+                firstName: 'FirstName4',
+                lastName: 'LastName4'
+            }
+        }
+    ];
+
+
+    for (var i = 0; i < books.length; i++) {
+        var bookMsg = 'Book # ' + (i + 1) + '\n' +
+            'Title: ' + books[i].title + '\n' +
+            'Author: ' + books[i].author.firstName + ' ' + books[i].author.lastName + '\n' +
+            '---';
+        console.log(bookMsg);
+    }
 
 
     /**
