@@ -76,20 +76,30 @@
 // ‘User jbomb is not an admin and can be reached at john@email.com’
 
 
-var user = {
-    username: "jbomb",
-    email:  "john@email.com",
-     isAdmin: true
- };
+// var user = {
+//     username: "jbomb",
+//     email:  "john@email.com",
+//      isAdmin: true
+//  };
+//
+//  function createUserMsg() {
+//      if (user.isAdmin) {
+//          return "User " + user.username + " is an admin and can be reached at john@email.com " + user.email;
+//      } else {
+//          return "User " + user.username + " is not an admin and can be reached at john@email.com " + user.email;
+//      }
+//  }
 
- function createUserMsg() {
-     if (user.isAdmin) {
-         return "User " + user.username + " is an admin and can be reached at john@email.com " + user.email;
-     } else {
-         return "User " + user.username + " is not an admin and can be reached at john@email.com " + user.email;
-     }
- }
+     // console.log(createUserMsg(user));
 
-     console.log(createUserMsg(user));
+function areOrPerimeter(l,w) {
+    if(isNaN(parseFloat(l))  || isNaN(parseFloat(w))) {
+        return false;
+    } if (l === w) {
+        return l * w;
+    }else{
+        return (l * 2) + (w * 2);
+    }
+}
 
 
