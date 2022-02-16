@@ -1,0 +1,28 @@
+body{
+    background-color: dodgerblue;
+    font-family: sans-serif;
+
+}
+
+
+h1, h2, h3 {
+    color: gold;
+}
+
+
+h3 {
+    font-size: 22px
+}
+
+
+.fancy-header{
+    color: red;
+    text-decoration: underline;
+}
+
+
+#product {
+    font-size: 18px;
+    text-align: center;
+}
+

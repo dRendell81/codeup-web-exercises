@@ -1,0 +1,59 @@
+body{
+    background-image: url("../images/clouds.jpeg");
+    background-repeat: round;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: coral;
+    font-family: sans-serif;
+
+}
+
+#section1{
+    background-position-x: center;
+
+}
+
+ul{
+    list-style-type: square;
+}
+
+ol{
+    list-style-type: circle;
+}
+
+ul.b{
+    list-style-type: upper-roman;
+}
+
+#welcome{
+    text-align: center;
+}
+
+h1, h2, h3{
+    color: gold;
+    text-decoration: underline;
+}
+
+table{
+    border:thin solid black;
+    font-size: 1.2em;
+}
+
+th{
+    border: thin solid black;
+    padding-left: 200px;
+    padding-right: 50px;
+    font-size-adjust: inherit;
+}
+
+tr{
+    border: thin solid black;
+    padding-left: 50px;
+    padding-right: 100px;
+    font-size-adjust: initial;
+}
+
+
+a{
+    background-color: white;
+}
