@@ -119,16 +119,148 @@ function isPositiveOdd(num) {
 // Exercise 18
 // Write a function definition named isPositiveEven that takes in a number and returns true or false if the value is both greater than zero and even
 
-function isPositiveEven() {
+function isPositiveEven(num) {
     return (num % 2 === 0 && num > 0)                   // I'm not understanding this function, not understanding the use of 2 and 0.
 }
 
 // Exercise 19
 // Write a function definition named isNegativeOdd that takes in a number and returns true or false if the value is both less than zero and odd.
 
-function isNegativeOdd() {
-    
+function isNegativeOdd(num) {
+    return (num % 2 !== 0 && num < 0)              // I'm not understanding thi function.
 }
+
+// Exercise 20-->
+// Write a function definition named isNegativeEven that takes in a number and returns true or false if the value is both less than zero and even.
+
+function isNegativeEven() {
+    return (num % 2 === 0 && num < 0)
+}
+
+// Exercise 21
+// Write a function definition named half that takes in a number and returns half the provided number.
+
+function half(num) {
+  return num / 2
+}
+
+// Exercise 22
+// Write a function definition named double that takes in a number and returns double the provided number.
+
+
+function double(num) {
+  return num * 2
+}
+
+// Exercise 23
+// Write a function definition named triple that takes in a number and returns triple the provided number.
+
+function triple(num) {
+    return num * 3
+}
+
+// Exercise 24
+// Write a function definition named reverseSign that takes in a number and returns the provided number but with the sign reversed.
+
+function reverseSign(num) {
+                                    //I'm not understanding this function or what it is asking
+}
+
+// Exercise 25
+// Write a function definition named absoluteValue that takes in a number and returns the absolute value of the provided number.
+
+function absoluteValue(num) {
+    return Math.abs(num);
+}
+
+// Exercise 26
+// Write a function definition named isMultipleOfThree that takes in a number and returns true or false if the number is evenly divisible by 3.
+
+function isMultipleOThree(num) {
+    return num % 3 === 0
+}
+
+// Exercise 27
+// Write a function definition named isMultipleOfFive that takes in a number and returns true or false if the number is evenly divisible by 5.
+
+function isMultipleOfFive(num) {
+    return num % 5 === 0
+}
+
+// Exercise 28
+// Write a function definition named isMultipleOfBothThreeAndFive that takes in a number and returns true or false if the number is evenly divisible by both 3 and 5.
+
+function isMultipleOfBothThreeAndFive(num) {
+    return (num % 3 === 0 && num % 5 === 0)
+}
+
+// Exercise 29
+// Write a function definition named square that takes in a number and returns the number times itself.
+
+function square(num) {
+  return num * num
+}
+
+// Exercise 30
+// Write a function definition named add that takes in two numbers and returns the sum.
+
+function add(num1, num2) {
+  return num1 + num2
+}
+
+// Exercise 31
+// Write a function definition named cube that takes in a number and returns the number times itself, times itself.
+
+function cube(num) {
+   return num * num * num;
+}
+
+// Exercise 32
+// Write a function definition named squareRoot that takes in a number and returns the square root of the provided number
+
+function squareRoot(num) {
+   return (Math.sqrt(num));
+}
+
+// Exercise 33
+// Write a function definition named subtract that takes in two numbers and returns the first minus the second argument.
+
+function subtract(num1, num2) {
+    return num1 - num2
+}
+
+// Exercise 34
+// Write a function definition named multiply that takes in two numbers and returns the first times the second argument.
+
+function multiply(num1, num2) {
+  return num1 * num2
+}
+
+// Exercise 35
+// Write a function definition named divide that takes in two numbers and returns the first argument divided by the second argument.
+
+function divide(num1, num2) {
+    return num1 / num2
+}
+
+// Exercise 36
+// Write a function definition named quotient that takes in two numbers and returns the quotient of dividing the first argument by the second argument.
+
+function quotient(num1, num2) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
