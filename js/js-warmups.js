@@ -92,13 +92,25 @@
 
      // console.log(createUserMsg(user));
 
-function areOrPerimeter(l,w) {
-    if(isNaN(parseFloat(l))  || isNaN(parseFloat(w))) {
+// function areOrPerimeter(l,w) {
+//     if(isNaN(parseFloat(l))  || isNaN(parseFloat(w))) {
+//         return false;
+//     } if (l === w) {
+//         return l * w;
+//     }else{
+//         return (l * 2) + (w * 2);
+//     }
+// }
+
+// write a function, sumTheStrings, it should take two numeric strings as input, it should add the numbers
+//and output the sum **as a string**
+
+function sumOfStrings(numString1, numString2){
+    if(isNaN(parseFloat(numString1)) || isNaN(parseFloat(numString2))){
         return false;
-    } if (l === w) {
-        return l * w;
-    }else{
-        return (l * 2) + (w * 2);
+    }   else{
+        return Number(parseFloat(numString1) + parseFloat(numString2));
+
     }
 }
 
