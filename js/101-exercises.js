@@ -250,9 +250,45 @@ function quotient(num1, num2) {
 
 }
 
+// Exercise 37
+// Write a function definition named remainder that takes in two numbers and returns the remainder of first argument divided by the second argument.
+
+function remainder(num1, num2) {
+    return num1 / num2
+}
+
+// Exercise 38
+// Write a function definition named sumOfSquares that takes in two numbers, squares each number, then returns the sum of both squares.
+
+function sumOfSquares(num1, num2) {
+// num1 = Math.pow(num1, 2);
+// num2 = num2 * num2;
+// return num1 + num2;
+   return num1 * num1 + num2 * num2
+}
 
 
+// Exercise 39
+// Write a function definition named timesTwoPlusThree that takes in a number, multiplies it by two, adds 3 and returns the result.
 
+function timesTwoPlusThree(num) {
+    return num * 2 + 3;
+}
+
+// Exercise 40
+// Write a function definition named areaOfRectangle that takes in two numbers and returns the product.
+
+
+// write a function name inverse that takes in a boolean and returns the boolean inverse.
+
+function inverse(input) {
+    if(!(input == true)){
+        return true
+    }else{
+        return false
+    }
+    // return !input
+}
 
 
 
