@@ -109,7 +109,7 @@ function sumOfStrings(numString1, numString2){
     if(isNaN(parseFloat(numString1)) || isNaN(parseFloat(numString2))){
         return false;
     }   else{
-        return Number(parseFloat(numString1) + parseFloat(numString2));
+        return Number(parseFloat(numString1) + parseFloat(numString2)).toString();
 
     }
 }
