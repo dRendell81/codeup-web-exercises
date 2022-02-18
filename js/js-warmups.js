@@ -105,13 +105,60 @@
 // write a function, sumTheStrings, it should take two numeric strings as input, it should add the numbers
 //and output the sum **as a string**
 
-function sumOfStrings(numString1, numString2){
-    if(isNaN(parseFloat(numString1)) || isNaN(parseFloat(numString2))){
-        return false;
-    }   else{
-        return Number(parseFloat(numString1) + parseFloat(numString2)).toString();
+// function sumOfStrings(numString1, numString2){
+//     if(isNaN(parseFloat(numString1)) || isNaN(parseFloat(numString2))){
+//         return false;
+//     }   else{
+//         return Number(parseFloat(numString1) + parseFloat(numString2)).toString();
+//
+//     }
+// }
 
+
+
+
+// Assume the following shape of the user object for the function input:
+//     {
+//         firstName: '...',
+//         lastName: '...',
+//         email: '...',
+//         username: '...',
+//         password: '...'
+//     }
+// The shape of the output should be the following:
+// {
+//     firstName: '...',
+//         lastName: '...',
+// }
+// Regardless of the case of the first name and last name input, the output should be in all lower case.
+// var fred = {
+//     firstName: 'Fred',
+//     lastName: 'Smith',
+//     email: 'fred@email.com',
+//     username: 'fred123',
+//     password: 'pass123'
+// }
+// getSimpleUser(fred) // {firstName: 'fred', lastName: 'smith'}
+
+
+//
+
+
+
+var fred = {
+    firstName: 'Fred',
+    lastName: 'Smith',
+    email: 'fred@email.com',
+    username: 'fred123',
+    password: 'pass123'
+}
+
+function getSimpleUser(user) {
+    return {
+        firstName: user.firstName.toLowerCase(),
+        lastName: user.lastName.toLowerCase()
     }
 }
 
+console.log(getSimpleUser(fred));
 
