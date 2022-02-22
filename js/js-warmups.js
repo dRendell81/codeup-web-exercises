@@ -145,20 +145,81 @@
 
 
 
-var fred = {
-    firstName: 'Fred',
-    lastName: 'Smith',
-    email: 'fred@email.com',
-    username: 'fred123',
-    password: 'pass123'
-}
+// var fred = {
+//     firstName: 'Fred',
+//     lastName: 'Smith',
+//     email: 'fred@email.com',
+//     username: 'fred123',
+//     password: 'pass123'
+// }
+//
+// function getSimpleUser(user) {
+//     return {
+//         firstName: user.firstName.toLowerCase(),
+//         lastName: user.lastName.toLowerCase()
+//     }
+// }
+//
+// console.log(getSimpleUser(fred));
 
-function getSimpleUser(user) {
-    return {
-        firstName: user.firstName.toLowerCase(),
-        lastName: user.lastName.toLowerCase()
+// Create a function, analyzeArray, that takes in an array and returns an object with information about the passed array. The function should return an object with properties containing information about the array, including the lengthOfArray, containsAllStrings, and the combineResult of adding all elements together.
+// analyzeArray([1, 2, 3]) returns...
+// {
+//     lengthOfArray: 3,
+//         containsAllStrings: false,
+//     combineResult: 6
+// }
+// analyzeArray([‘a’, ‘b’, ‘c’]) returns...
+// {
+//     lengthOfArray: 3,
+//         containsAllStrings: true,
+//     combineResult: ‘abc’
+// }
+// analyzeArray([‘bob’, 100, null]) returns...
+// {
+//     lengthOfArray: 3,
+//         containsAllStrings: true,
+//     combineResult: ‘bob123null’
+// }
+
+// var AalyzeArray
+
+// Create a function, createNames, that takes in an array of first names and an array of last names. The function should return an array of name objects with firstName and lastName properties with the input array values. Assume both input arrays are not empty, the same length and only contain string elements.
+//
+// var firstNames = ['CJ', 'Max', 'Claude', 'Meowmeow'];
+// var lastNames = ['Cat', 'Feline', 'Kitten', 'Calico'];
+//
+// createNames(firstNames, lastNames) // returns...
+//
+//     [
+//     {
+//         firstName: 'CJ',
+//         lastName: 'Cat'
+//     },
+//         {
+//             firstName: 'Max',
+//             lastName: 'Feline'
+//         },
+//         {
+//             firstName: 'Claude',
+//             lastName: 'Kitten'
+//         },
+//         {
+//             firstName: 'Meowmeow',
+//             lastName: 'Calico'
+//         }
+//     ]
+//
+// HINT: a solution may involve using a for loop to iterate over the length of one array to push each name object onto an array of name objects that will be returned from the function.
+
+
+function createNames(firstNames, lastNames) {
+    var firstNames = ['CJ', 'Max', 'Claude', 'Meowmeow'];
+    var lastNames = ['Cat', 'Feline', 'Kitten', 'Calico']; {
+
     }
 }
 
-console.log(getSimpleUser(fred));
+
+
 
