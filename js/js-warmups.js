@@ -213,12 +213,21 @@
 // HINT: a solution may involve using a for loop to iterate over the length of one array to push each name object onto an array of name objects that will be returned from the function.
 
 
-function createNames(firstNames, lastNames) {
-    var firstNames = ['CJ', 'Max', 'Claude', 'Meowmeow'];
-    var lastNames = ['Cat', 'Feline', 'Kitten', 'Calico']; {
+// function createNames(firstNames, lastNames) {
+//     var firstNames = ['CJ', 'Max', 'Claude', 'Meowmeow'];
+//     var lastNames = ['Cat', 'Feline', 'Kitten', 'Calico']; {
+//
+//     }
+// }
 
-    }
+function remainder(n, m) {
+    return n % m;
 }
+
+
+
+console.log(remainder(17,5));
+console.log(remainder(5,17));
 
 
 
