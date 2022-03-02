@@ -5,17 +5,17 @@
     <title>DOM: Query and Modify</title>
 </head>
 <body>
-<script src="js/dom-query.js"></script>
 
-<h1 id="main-header">Hello World!</h1>
+<h1 id="main-header"><button>click</button>Hello World!</h1>
+
 <ul>
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
     <li data-dbid="3">Item 3</li>
     <li data-dbid="4">Item 4</li>
     <li data-dbid="5">Item 5</li>
-</ul>
-<h2 id="sub-header">Hello Again.</h2>
+</ul><button>click</button>
+<h2 id="sub-header"><button>click</button>Hello Again.</h2>
 <p class="sub-paragraph">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -31,32 +31,41 @@
         "use strict";
         // TODO: Uncomment next line and get the main header element by id
         var mainHeader = document.getElementById("main-header")
+        function coolJava() {
 
-        // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-        mainHeader.innerText = "JavaScript is Cool";
 
+            // TODO: Set inner html of mainHeader to "JavaScript is Cool"
+            mainHeader.innerText = "JavaScript is Cool";
+        }
+        mainHeader.addEventListener("click", coolJava)
         // TODO: Uncomment the next line and get the sub header element by id
         var subHeader = document.getElementById("sub-header");
+        function blueHeader() {
 
-        // TODO: Set the text color of subHeader to blue
-        subHeader.style.color = "blue";
-        // subHeader.setAttribute("class", "blue");
-        //
-        // var colorChange = document.getElementsByClassName("blue");
-        // colorChange[0].style.color = "blue";
-
+            // TODO: Set the text color of subHeader to blue
+            subHeader.style.color = "blue";
+            // subHeader.setAttribute("class", "blue");
+            //
+            // var colorChange = document.getElementsByClassName("blue");
+            // colorChange[0].style.color = "blue";
+        }
+        subHeader.addEventListener("click", blueHeader);
         // TODO: Uncomment the next line and get all list items
         var listItems = document.getElementsByTagName("li");
+        function computer(){
+
         // var listItems = document.getElementsByTagName("li");
         // for (var i = 0; i < listItems.length; i++) {
         //     console.log(listItems[i]);
         // }
         // TODO: Set text color on every other list item to grey
         // TODO: Set text color of li with dbid = 1 to blue
-        for (var i = 0; i < listItems.length; i++){
-            if (i % 2 !== 0){
+        for (var i = 0; i < listItems.length; i++) {
+            if (i % 2 !== 0) {
                 listItems[i].style.color = "grey";
             }
+        }
+        listItems.addEventListener("click", computer);
             if (listItems[i].dataset.dbid === '1'){
                 listItems[i].style.color = 'blue'
             }
@@ -71,6 +80,8 @@
 
         // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
         subParagraphs[0].innerHTML = "Mission Accomplished!"
+
+
     })();
 </script>
 </body>
