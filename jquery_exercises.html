@@ -6,21 +6,47 @@
 </head>
 <body>
 
-    <h1>jQuery Exercise</h1>
+
 
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 
+<main class="container">
+    <h1>jQuery Exercise </h1>
+    <h3>Fast and Furious Films</h3>
+    <ol>
+        <li>Fast and Furious</li>
+        <li>Toyoko Drift</li>
+        <li>Too Fast and Furious</li>
+        <li>Fast 9</li>
+        <li>Fast 12 Senior Citizens Edition</li>
+    </ol>
+    <br>
+    <div id="test">New Section</div>
+    <br>
+    <p class="paragraph">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab alias aliquam, blanditiis consequuntur cum cumque delectus, eos et harum illum inventore ipsa laudantium, magni numquam obcaecati sapiente sunt veritatis! Fugiat!
+    </p>
+
+</main>
+
     <script>
 
-        "use strict"
         $(document).ready(function() {
-        console.log(jQuery);
-        console.log($);
+            "use strict";
+
+
+            $("li").css ("background-color", "red");
+            $("h3").css ("text-decoration", "underline");
+            $("li").eq(2).text ("Did this work!");
+            $("li").eq(1).css ("background-color", "blue");
+            $("p").css ("font-style", "italic");
+            $("#test").text ("I was replaced!");
+            $("li").css ("font-size", "20px");
+            $("p, h1, li").css ("background-color", "yellow");
+
 
 
         });
-
-
     </script>
 
 </body>
