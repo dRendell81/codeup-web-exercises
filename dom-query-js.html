@@ -6,16 +6,15 @@
 </head>
 <body>
 
-<h1 id="main-header"><button>click</button>Hello World!</h1>
-
+<h1 id="main-header">Hello World!</h1>
 <ul>
     <li data-dbid="1">Item 1</li>
     <li data-dbid="2">Item 2</li>
     <li data-dbid="3">Item 3</li>
     <li data-dbid="4">Item 4</li>
     <li data-dbid="5">Item 5</li>
-</ul><button>click</button>
-<h2 id="sub-header"><button>click</button>Hello Again.</h2>
+</ul>
+<h2 id="sub-header">Hello Again.</h2>
 <p class="sub-paragraph">
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
     eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
@@ -26,60 +25,78 @@
     culpa qui officia deserunt mollit anim id est laborum.
 </p>
 
+<div class="buttons">
+    <button id="btn1">items1</button>
+    <button id="btn2">items2</button>
+    <button id="btn3">items3</button>
+    <button id="btn4">items4</button>
+</div>
+
+
+
+
 <script>
+    // 1. creat 4 new buttons
+    // 2. Add click event handlers code
+    // 3. Move code into.
+    // 4. One for each button
+
     (function() {
         "use strict";
-        // TODO: Uncomment next line and get the main header element by id
-        var mainHeader = document.getElementById("main-header")
-        function coolJava() {
 
+
+        function updateHeader () {
+            console.log("Hello")
+            // TODO: Uncomment next line and get the main header element by id
+            var mainHeader = document.getElementById("main-header");
 
             // TODO: Set inner html of mainHeader to "JavaScript is Cool"
-            mainHeader.innerText = "JavaScript is Cool";
+            mainHeader.innerHTML = "JavaScript is Cool";
         }
-        mainHeader.addEventListener("click", coolJava)
-        // TODO: Uncomment the next line and get the sub header element by id
-        var subHeader = document.getElementById("sub-header");
-        function blueHeader() {
+
+        function updateSubHeader () {
+            // TODO: Uncomment the next line and get the sub header element by id
+            var subHeader = document.getElementById("sub-header");
 
             // TODO: Set the text color of subHeader to blue
-            subHeader.style.color = "blue";
-            // subHeader.setAttribute("class", "blue");
-            //
-            // var colorChange = document.getElementsByClassName("blue");
-            // colorChange[0].style.color = "blue";
-        }
-        subHeader.addEventListener("click", blueHeader);
-        // TODO: Uncomment the next line and get all list items
-        var listItems = document.getElementsByTagName("li");
-        function computer(){
+            subHeader.style.color = 'blue';
 
-        // var listItems = document.getElementsByTagName("li");
-        // for (var i = 0; i < listItems.length; i++) {
-        //     console.log(listItems[i]);
-        // }
-        // TODO: Set text color on every other list item to grey
-        // TODO: Set text color of li with dbid = 1 to blue
-        for (var i = 0; i < listItems.length; i++) {
-            if (i % 2 !== 0) {
-                listItems[i].style.color = "grey";
+        }
+
+        function updateLiElements() {
+            // TODO: Uncomment the next line and get all list items
+            var listItems = document.getElementsByTagName("li");
+
+            // TODO: Set text color on every other list item to grey
+            // TODO: Set text color of li with dbid = 1 to blue
+            for (var i = 0; i < listItems.length; i++) {
+                if (i % 2 !== 0) {
+                    listItems[i].style.color = "grey";
+                }
+                if (listItems[i].dataset.dbid === '1') {
+                    listItems[i].style.color = 'blue'
+                }
+                // if (listItems[i].getAttribute('data-dbid') === '1'){
+                //     listItems[i].style.color = 'blue';
+                // }
             }
-        }
-        listItems.addEventListener("click", computer);
-            if (listItems[i].dataset.dbid === '1'){
-                listItems[i].style.color = 'blue'
-            }
-            // if (listItems[i].getAttribute('data-dbid') === '1'){
-            //     listItems[i].style.color = 'blue';
-            // }
+
         }
 
+        function updateSubParagraph () {
+            // TODO: Uncomment the next line and get all elements with class name sub-paragraph
+            var subParagraphs = document.getElementsByClassName("sub-paragraph");
 
-        // TODO: Uncomment the next line and get all elements with class name sub-paragraph
-        var subParagraphs = document.getElementsByClassName("sub-paragraph");
+            // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
+            subParagraphs[0].innerHTML = "Mission Accomplished!"
+        }
 
-        // TODO: Change the text in the first sub paragraph to "Mission Accomplished!"
-        subParagraphs[0].innerHTML = "Mission Accomplished!"
+
+
+        document.getElementById("btn1").addEventListener("click", updateHeader, {once: true}); //once: true is to only run once
+        document.getElementById("btn2").addEventListener("click", updateSubHeader);
+        document.getElementById("btn3").addEventListener("click", updateLiElements);
+        document.getElementById("btn4").addEventListener("click", updateSubParagraph);
 
 
     })();

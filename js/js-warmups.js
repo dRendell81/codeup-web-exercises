@@ -220,14 +220,192 @@
 //     }
 // }
 
-function remainder(n, m) {
-    return n % m;
-}
+// function remainder(n, m) {
+//     return n % m;
+// }
+//
+//
+//
+// console.log(remainder(17,5));
+// console.log(remainder(5,17));
+
+
+// function shortestWord(x) {
+//
+// }
+
+// Create a function that accepts an object with two properties, parcelNumber and weight, and returns the weight.
+
+// function parcelWeight(object){
+//     return object.weight;
+// }
+//
+// var parcel = {
+//     parcelNumber: 1,
+//     weight: 20,
+// }
+//
+// console.log(parcelWeight(parcel));
+// output: 20
+
+// Create a function that accepts an array of objects with two properties, parcelNumber and weight, and returns the total weight of all parcels.
+
+// function totalWeight(arrayOfObjects){
+//     var total = 0;
+//     for (var i = 0; i < arrayOfObjects.length; i++){
+//         total += arrayOfObjects[i].weight;
+//     }
+//     return total;
+// }
+//
+// var parcels = [{number: 1, weight: 20}, {number: 2, weight: 25}];
+//
+// console.log(totalWeight(parcels));
+// output: 45
+
+// Create a function that accepts an array of objects with two properties, parcelNumber and weight, and outputs the content to a web page in two columns, with the total listed at the end.
+//
+// function outputParcelInfo(parcelsArray){
+//     var outputDiv = document.getElementById("parcelInfo");
+//     var total = 0;
+//     var html = "<table><tr><th>Parcel Number</th><th>Weight</th>";
+//     for (var i = 0; i < parcelsArray.length; i++){
+//         total += parcelsArray[i].weight;
+//         html += "<tr><td>" + parcelsArray[i].number + "</td><td>" + parcelsArray[i].weight + "</td></tr>";
+//     }
+//     html += "<tr><td>Total:</td><td>" + total + "</td></table>";
+//     outputDiv.innerHTML = html;
+// }
+//
+// outputParcelInfo(parcels);
+
+// DOM warmup:
+// Create a heading that says "Good morning!"
+// Create a button that says "Press if after 12pm"
+// When the button is pressed, "Good morning" changes to "Good afternoon"
+// var theButton = document.querySelector("button");
+//
+// function changeHeader(){
+//     document.querySelector('h1').innerText = "Good afternoon!";
+// }
+//
+// theButton.addEventListener('click', changeHeader);
+
+
+// function parcelWeight (object) {
+//     return object.weight;
+// }
+
+// var parcel = {
+//     number: 1,
+//     weight: 20
+// }
+
+// console.log(parcelWeight(parcel));
+
+// function totalWeight(array){
+//     var total = 0;
+//     for (var i = 0; i < array.length; i++){
+//         total += array[i].weight;
+//     }
+//     return total;
+// }
+
+// var parcels = [{number: 1, weight: 20}, {number: 2, weight: 25}];
+
+// console.log(totalWeight(parcels));
+
+// function outputParcelInfo(parcelsArray){
+//     var outputDiv = document.getElementById("parcelInfo");
+//     var total = 0;
+//     var html = "<table><tr><th>Parcel Number</th><th>Weight</th>";
+//     for (var i = 0; i < parcelsArray.length; i++){
+//         total += parcelsArray[i].weight;
+//         html += "<tr><td>" + parcelsArray[i].number + "</td><td>" + parcelsArray[i].weight + "</td></tr>";
+//     }
+//     html += "<tr><td>Total:</td><td>" + total + "</td></table>";
+//     outputDiv.innerHTML = html;
+// }
+
+// outputParcelInfo(parcels);
 
 
 
-console.log(remainder(17,5));
-console.log(remainder(5,17));
+
+
+
+// Consider the following array of users:
+//
+//     var users = [
+//         {
+//             username: 'fsmith',
+//             email: 'fsmith@email.com',
+//             numberOfLogins: 23
+//         },
+//         {
+//             username: 'ksmith',
+//             email: 'ksmith@email.com',
+//             numberOfLogins: 100
+//         },
+//         {
+//             username: 'lsmith',
+//             email: 'lsmith@email.com',
+//             numberOfLogins: 10
+//         }
+//     ];
+//
+// 1. Create a function, returnFirstUser, that takes in an array of user objects and returns the first user object.
+
+// function returnFirstuser(users) {
+//     return users[0];
+// }
+
+//
+// returnFirstUser(users) should return...
+//
+// {
+//     username: 'fsmith',
+//         email: 'fsmith@email.com',
+//     numberOfLogins: 23
+// }
+//
+// 2. Create a function, returnTotalUserLogins, that takes in an array of user objects and returns the total count of logins
+// for all users.
+//
+// returnTotalUserLogins(users) should return... 133
+
+// function returnTotalUserLogins(users){
+//     var total = 0;
+//
+//     users.forEach(function(user){
+//         total += user.numberOfLogins;
+//     });
+//     return total;
+// }
+
+// function returnTotalUserLogins(users) {
+//     var total = 0;
+//     for (var i = 0; i < users.length; i += 1) {
+//         total += users[i].numberOfLogins;
+//     }
+//     return total;
+// }
+//
+// console.log(returnTotalUserLogins(users));
+
+//
+// 3. (optional bonus) create a function, returnMostFrequentUser, that takes in an array of user objects and returns the
+// user object with the highest number of logins.
+//
+//
+// returnMostFrequentUser(users) should return...
+//
+// {
+//     username: 'ksmith',
+//         email: 'ksmith@email.com',
+//     numberOfLogins: 100
+// }
+
 
 
 
