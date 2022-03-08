@@ -290,6 +290,98 @@ function inverse(input) {
     // return !input
 }
 
+// Exercise 50
+// Write a function definition named first that takes in sequence and returns the first value of that sequence.
+
+function first(input) {
+    return input[0];
+}
+
+// Exercise 51
+// Write a function definition named second that takes in sequence and returns the second value of that sequence.
+
+function second(input) {
+    return input[1];
+}
+
+// Exercise 52
+// Write a function definition named third that takes in sequence and returns the third value of that sequence.
+
+function third(input){
+   return input[2];
+}
+
+// Exercise 53
+// Write a function definition named forth that takes in sequence and returns the forth value of that sequence.
+
+function forth(input) {
+    return input[3];
+}
+
+// Exercise 54
+// Write a function definition named last that takes in sequence and returns the last value of that sequence.
+
+// function last(input) {
+//     return input.pop;
+// }
+
+function last( input) {
+var newArr = [];
+if(typeof input === "string"){
+newArr = input.split("") //https://www.freecodecamp.org/news/javascript-split-how-to-split-a-string-into-an-array-in-js/
+}else if(Array.isArray(input)){   //The Array.isArray() method determines whether the passed value is an Array.
+newArr = input
+}
+return newArr.pop()
+}
+
+// Exercise 55
+// Write a function definition named secondToLast that takes in sequence and returns the second to last value of that sequence.
+
+function secondToLast( input) {
+if(typeof input === 'string'){
+var newArr = input.split("")
+var newArrReverse = newArr.reverse()
+
+}else if (Array.isArray(input)){
+var newArrReverse = input.reverse()
+}
+return newArrReverse [1];
+}
+
+// Exercise 56
+// Write a function definition named thirdToLast that takes in sequence and returns the third to last value of that sequence.
+
+function secondToLast( input) {
+    if(typeof input === 'string'){
+        var newArr = input.split("")
+        var newArrReverse = newArr.reverse()
+
+    }else if (Array.isArray(input)){
+        var newArrReverse = input.reverse()
+    }
+    return newArrReverse [2];
+}
+
+// Exercise 57
+// Write a function definition named firstAndSecond that takes in sequence and returns the first and second value of that sequence as an array.
+
+function firstAndSecond (input) {
+    return input.slice(0, 2);
+}
+
+// Exercise 58
+// Write a function definition named firstAndLast that takes in sequence and returns the first and last value of that sequence as an array
+
+
+
+
+
+
+
+
+
+
 
 
 
